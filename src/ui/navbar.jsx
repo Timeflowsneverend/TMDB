@@ -7,24 +7,27 @@ const Navbar = () => {
         <>
             {/* Top Nav */}
             <div className="w-full bg-[#032541] text-white">
-                <div className="flex items-center justify-between h-[64px] max-w-[1220px] mx-auto px-4 text-[16px]"
+                <div className="flex items-center justify-center h-[64px]  mx-auto px-4 text-[16px]"
                     style={{ fontFamily: 'Source Sans Pro, sans-serif', fontWeight: '600' }}>
-                    <ul className="flex items-center gap-6">
-                        <li>
-                            <a href="#"><img className="w-[154px]" src={tmdb} alt="tmdb" /></a>
-                        </li>
-                        <li><a href="#">Movies</a></li>
-                        <li><a href="#">TV Shows</a></li>
-                        <li><a href="#">People</a></li>
-                        <li><a href="#">More</a></li>
-                    </ul>
-                    <ul className="flex items-center gap-6">
-                        <li><Plus size={20} /></li>
-                        <li><span className="border px-2 py-1 rounded border-white">EN</span></li>
-                        <li><a href="#">Login</a></li>
-                        <li><a href="#">Join TMDB</a></li>
-                        <li><IoSearchSharp size={25} color="#01b4e4" /></li>
-                    </ul>
+                    <div className="flex h-[56px] items-center justify-between  max-w-[1300px] mx-auto  w-full px-[40px]">
+                        <ul className="flex items-center gap-6">
+                            <li>
+                                <a href="#"><img className="w-[154px]" src={tmdb} alt="tmdb" /></a>
+                            </li>
+                            <li><a href="#">Movies</a></li>
+                            <li><a href="#">TV Shows</a></li>
+                            <li><a href="#">People</a></li>
+                            <li><a href="#">More</a></li>
+                        </ul>
+                        <ul className="flex items-center gap-6">
+                            <li><Plus size={20} strokeWidth={5} /></li>
+                            <li><span className="border h-[18px] w-[16px] py-[3px] px-[5px] rounded border-white">EN</span></li>
+                            <li><a href="#">Login</a></li>
+                            <li><a href="#">Join TMDB</a></li>
+                            <li><IoSearchSharp size={26}  color="#01b4e4" strokeWidth={8} /></li>
+                        </ul>
+
+                    </div>
                 </div>
             </div>
 

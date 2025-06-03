@@ -22,9 +22,12 @@ const Layout = () => {
                 <main>
                     <Outlet />
                 </main>
-                <footer className="max-h-[100%] flex items-center justify-center py-[80px] h-[325px]">
-                    <div>
-                        <img className="w-[130px]" src={tmd} alt="TMDB" />
+                <footer className="max-h-[100%] flex items-center justify-center h-[325px]">
+                    <div className="mr-[40px]">
+                        <div className="img-container flex items-start justify-end h-[148px]">
+                            <img className="w-[130px]" src={tmd} alt="TMDB" />
+
+                        </div>
                         <p className="bg-white py-[8px] rounded-sm text-[19px] px-[16px] text-[#01b4e4]">JOIN THE COMMUNITY</p>
                     </div>
                     <div className="flex gap-8">
